@@ -13,6 +13,10 @@ public class Main {
         }
         System.out.println(message2);
 
+//        Shell shell = new Shell();
+//        shell.setUnSortArray(array1);
+//        shell.shellSort();
+//        System.out.println(shell);
 //        Selection selection = new Selection();
 //        selection.setUnSortArray(array1);
 //        selection.selectionSort();
