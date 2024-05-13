@@ -12,7 +12,9 @@ public class Main {
             message2 = message2 + String.valueOf(num) + " ";
         }
         System.out.println(message2);
-
+        Quick quick = new Quick();
+        quick.quickSort(array1, 0, array1.length - 1);
+        System.out.println(quick);
 //        Shell shell = new Shell();
 //        shell.setUnSortArray(array1);
 //        shell.shellSort();
