@@ -6,71 +6,46 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        SortingHandler sortingHandler = new SortingHandler();
+        System.out.println("--------------------------------------------------------------EJERCICIO 1--------------------------------------------------------");
         int[] array1 = {40, 21, 4, 9, 10, 35};
         String message2 = "Array desordenado: ";
         for (int num: array1) {
             message2 = message2 + String.valueOf(num) + " ";
         }
         System.out.println(message2);
-        Quick quick = new Quick();
-        quick.quickSort(array1, 0, array1.length - 1);
-        System.out.println(quick);
-//        Shell shell = new Shell();
-//        shell.setUnSortArray(array1);
-//        shell.shellSort();
-//        System.out.println(shell);
-//        Selection selection = new Selection();
-//        selection.setUnSortArray(array1);
-//        selection.selectionSort();
-//        System.out.println(selection);
-//        // arrays a ordenar
-//        Bubble bubble = new Bubble();
-//        System.out.println("Array original: ");
-//        for (int num: array1) {
-//            System.out.println(num);
-//        }
-//        bubble.setUnSortArray(array1);
-//        array1 = bubble.bubbleSort();
-//        System.out.println("Array organizado: ");
-//        for (int num: array1) {
-//            System.out.println(num);
-//        }
-////        // mensaje para poder mostrar el array: se concatena con la version string de cada numero
-//
-//        System.out.println(message2);
-//        // se crea la instancia del algoritmo
-//        Insertion insertion = new Insertion();
-//        insertion.setUnSortArray(array1);
-//
-//        array1 = insertion.insertionSort();
-//
-//        String message = "Array ordenado: ";
-//        for (int num: array1) {
-//            message = message + String.valueOf(num) + " ";
-//        }
-//        System.out.println(message);
-        Persona person1 = new Persona(1, "Pato", 24, 100);
-
-        // Crear una lista de personas y un generador de números aleatorios
-        // [{id, nombre,edad, salario} , {id, nombre,edad, salario}, {id, nombre,edad, salario}]
-        List<Persona> personas = new ArrayList<>();
-        Random random = new Random();
-
-        // Generar un número aleatorio entre 5 y 10 para determinar el tamaño de la lista
-        int numElementos = random.nextInt(6) + 5;
-        // Llenar la lista con personas aleatorias
-        for (int i = 0; i < numElementos; i++) {
-            personas.add(new Persona(i + 1, "Persona " + (i + 1), random.nextInt(50) + 18, random.nextDouble() * 10000));
+        // metodos de ordenamiento
+        sortingHandler.setArray(array1);
+        sortingHandler.printSorts();
+        System.out.println("--------------------------------------------------------------EJERCICIO 2---------------------------------------------------------");
+        int[] array2 = {47, 1, 5, 3, 7, 13, 25, 60, 0};
+        message2 = "Array desordenado: ";
+        for (int num: array2) {
+            message2 = message2 + String.valueOf(num) + " ";
         }
-        // Ordenar la lista por edad usando Bubble Sort
-        // [1 , 2 ,5 , 6 ,4 ]
-        ListaPersonas personaList = new ListaPersonas();
-        personaList.setPersonas(personas);
-//        personaList.bubleSortEdad();
-        personaList.bubleSortSalario();
-
-        for (Persona per: personaList.getPersonas()) {
-            System.out.println(per);
+        System.out.println(message2);
+        // metodos de ordenamiento
+        sortingHandler.setArray(array2);
+        sortingHandler.printSorts();
+        System.out.println("--------------------------------------------------------------EJERCICIO 3---------------------------------------------------------");
+        int[] array3 = {5, 2, 7, 3, 1, 8, 2, 6, 9};
+        message2 = "Array desordenado: ";
+        for (int num: array3) {
+            message2 = message2 + String.valueOf(num) + " ";
         }
+        System.out.println(message2);
+        // metodos de ordenamiento
+        sortingHandler.setArray(array3);
+        sortingHandler.printSorts();
+        System.out.println("--------------------------------------------------------------EJERCICIO 4---------------------------------------------------------");
+        int[] array4 = {3, 5, 33, 1, 8, 1, 24, 23, 8};
+        message2 = "Array desordenado: ";
+        for (int num: array4) {
+            message2 = message2 + String.valueOf(num) + " ";
+        }
+        System.out.println(message2);
+        // metodos de ordenamiento
+        sortingHandler.setArray(array4);
+        sortingHandler.printSorts();
     }
 }
