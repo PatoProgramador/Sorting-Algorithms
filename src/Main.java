@@ -1,7 +1,4 @@
-import com.SortingAlgorithms.models.Bubble;
-import com.SortingAlgorithms.models.Insertion;
-import com.SortingAlgorithms.models.ListaPersonas;
-import com.SortingAlgorithms.models.Persona;
+import com.SortingAlgorithms.models.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,9 +6,19 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
+        int[] array1 = {40, 21, 4, 9, 10, 35};
+        String message2 = "Array desordenado: ";
+        for (int num: array1) {
+            message2 = message2 + String.valueOf(num) + " ";
+        }
+        System.out.println(message2);
+
+//        Selection selection = new Selection();
+//        selection.setUnSortArray(array1);
+//        selection.selectionSort();
+//        System.out.println(selection);
 //        // arrays a ordenar
 //        Bubble bubble = new Bubble();
-//        int[] array1 = {40, 21, 4, 9, 10, 35};
 //        System.out.println("Array original: ");
 //        for (int num: array1) {
 //            System.out.println(num);
@@ -23,10 +30,7 @@ public class Main {
 //            System.out.println(num);
 //        }
 ////        // mensaje para poder mostrar el array: se concatena con la version string de cada numero
-//        String message2 = "Array desordenado: ";
-//        for (int num: array1) {
-//            message2 = message2 + String.valueOf(num) + " ";
-//        }
+//
 //        System.out.println(message2);
 //        // se crea la instancia del algoritmo
 //        Insertion insertion = new Insertion();
