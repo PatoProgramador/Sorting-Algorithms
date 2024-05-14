@@ -14,9 +14,11 @@ public class Insertion extends SortAlgoritms {
             { // la nueva posición del elemento i.
                 if (aux > array[j]) // Si se encuentra la posición:
                 {
+                    System.out.println("El número " + aux + " se quedó en su posicion");
                     array[j + 1] = aux; // Ponerlo
                     break; // y colocar el siguiente número.
                 } else // si no, sigue buscándola.
+                    System.out.println("Se intercambio el número " + array[j] + " por el número " + array[j+1]);
                     array[j + 1] = array[j];
             }
             if (j == -1) // si se ha mirado todas las posiciones y no se ha encontrado la correcta

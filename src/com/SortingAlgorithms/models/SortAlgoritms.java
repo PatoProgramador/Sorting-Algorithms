@@ -13,7 +13,7 @@ public class SortAlgoritms {
 
     @Override
     public String toString() {
-        String arrayString = "Arreglo: ";
+        String arrayString = "Array ordenado: ";
         int[] arr = this.getUnSortArray();
         for (int num: arr) {
             String temp = String.valueOf(num);
